@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "start": "supervisor -n exit lib/js/src/demo.js"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^1.8.1"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.0.2",
+    "supervisor": "^0.12.0"
+  }
+}
