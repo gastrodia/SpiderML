@@ -1,11 +1,12 @@
 {
-  "name": "hello",
+  "name": "spider-ml",
   "version": "0.1.0",
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "start": "supervisor -n exit lib/js/src/demo.js"
+    "start": "supervisor -n exit lib/js/src/demo.js",
+    "test":"bsc -I src -c  -bs-main src/demo.ml"
   },
   "keywords": [
     "BuckleScript"
